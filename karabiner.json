@@ -26,27 +26,12 @@
                                         "type": "frontmost_application_if"
                                     }
                                 ],
-                                "description": "For VSCode, function keys to function keys",
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "f1",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f1"
-                                    }
-                                ],
+                                "description": "For VSCode, change function f5",
+
                                 "from": {
                                     "key_code": "f5",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
+                                    "modifiers": { 
+                                        "optional": ["any"]
                                     }
                                 },
                                 "to": [
@@ -54,19 +39,7 @@
                                         "key_code": "f5"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "f9",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f9"
-                                    }
-                                ]
+                                "type": "basic"
                             }
                         ]
                     },
@@ -81,28 +54,17 @@
                                         "type": "frontmost_application_if"
                                     }
                                 ],
-                                "description": "For VSCode, change tab to esc",
+                                "description": "For VSCode, change function f9",
+
                                 "from": {
-                                    "key_code": 207,
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
+                                    "key_code": "f9",
+                                    "modifiers": { 
+                                        "optional": ["any"]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "f5"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": {}
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape",
-                                        "modifiers": []
+                                        "key_code": "f9"
                                     }
                                 ],
                                 "type": "basic"
@@ -115,72 +77,21 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "org.vim.MacVim"
+                                            "com.googlecode.iterm2",
+                                            "com.apple.Terminal",
+                                            "com.microsoft.VSCode"
+
                                         ],
                                         "type": "frontmost_application_if"
                                     }
                                 ],
-                                "description": "For MacVim, change tab to esc",
+                                "description": "For iterm2, iterm, and VSCode change tab to esc",
                                 "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": {}
+                                    "key_code": "caps_lock"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "escape",
-                                        "modifiers": []
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.googlecode.iterm2"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "description": "For iterm2, change tab to esc",
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": {}
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape",
-                                        "modifiers": []
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.apple.Terminal"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "description": "For Terminal, change tab to esc",
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": {}
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape",
-                                        "modifiers": []
+                                        "key_code": "escape"
                                     }
                                 ],
                                 "type": "basic"
@@ -189,7 +100,7 @@
                     }
                 ]
             },
-           "name": "Default profile",
+            "name": "Default profile",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
