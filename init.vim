@@ -21,16 +21,6 @@ let g:tex_flavor = 'latex'
 let g:vimtex_view_method='skim'
 let g:vimtex_compiler_progname = 'nvr'
 
-let g:vimtex_quickfix_latexlog = {
-      \ 'overfull' : 0,
-      \ 'underfull' : 0,
-      \ 'font' : 0,
-      \ 'float specifier' : 0,
-      \ 'packages' : {
-      \   'default' : 0,
-      \ },
-      \}
-
 let g:vimtex_quickfix_ignore_filters = [
           \ 'Overfull',
           \ 'Underfull',
@@ -50,6 +40,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'jreybert/vimagit'
 Plug 'morhetz/gruvbox' "color scheme
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
