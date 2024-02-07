@@ -3,7 +3,9 @@ set autoindent
 set backup
 set ruler
 set number
-set spell spelllang=en_us
+set spell
+set spellfile=~/.config/nvim/spell/en.utf-8.add
+let g:tex_comment_nospell=1
 set mouse=a
 set wrap
 set wrap linebreak nolist
@@ -19,7 +21,7 @@ set updatetime=100
 
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method='skim'
-let g:vimtex_compiler_progname = 'nvr'
+"let g:vimtex_compiler_progname = 'nvr'
 
 let g:vimtex_quickfix_ignore_filters = [
           \ 'Overfull',
@@ -29,6 +31,17 @@ let g:vimtex_quickfix_ignore_filters = [
 "let g:vimtex_quickfix_latexlog = {'default' : 0}
 
 let g:deoplete#enable_at_startup = 1
+
+function! BuildComposer(info)
+  if a:info.status != 'unchanged' || a:info.force
+    if has('nvim')
+      !cargo build --release --locked
+    else
+      !cargo build --release --locked --no-default-features --features json-rpc
+    endif
+  endif
+endfunction
+
 
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -41,6 +54,7 @@ Plug 'jreybert/vimagit'
 Plug 'morhetz/gruvbox' "color scheme
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 
 call plug#end()
 
