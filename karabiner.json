@@ -1,9 +1,5 @@
 {
-    "global": {
-        "check_for_updates_on_startup": true,
-        "show_in_menu_bar": false,
-        "show_profile_name_in_menu_bar": false
-    },
+    "global": { "show_in_menu_bar": false },
     "profiles": [
         {
             "complex_modifications": {
@@ -11,8 +7,7 @@
                     "basic.simultaneous_threshold_milliseconds": 5,
                     "basic.to_delayed_action_delay_milliseconds": 50,
                     "basic.to_if_alone_timeout_milliseconds": 100,
-                    "basic.to_if_held_down_threshold_milliseconds": 50,
-                    "mouse_motion_to_scroll.speed": 100
+                    "basic.to_if_held_down_threshold_milliseconds": 50
                 },
                 "rules": [
                     {
@@ -27,18 +22,11 @@
                                     }
                                 ],
                                 "description": "For VSCode, change function f5",
-
                                 "from": {
                                     "key_code": "f5",
-                                    "modifiers": { 
-                                        "optional": ["any"]
-                                    }
+                                    "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "f5"
-                                    }
-                                ],
+                                "to": [{ "key_code": "f5" }],
                                 "type": "basic"
                             }
                         ]
@@ -55,18 +43,11 @@
                                     }
                                 ],
                                 "description": "For VSCode, change function f9",
-
                                 "from": {
                                     "key_code": "f9",
-                                    "modifiers": { 
-                                        "optional": ["any"]
-                                    }
+                                    "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "f9"
-                                    }
-                                ],
+                                "to": [{ "key_code": "f9" }],
                                 "type": "basic"
                             }
                         ]
@@ -80,20 +61,13 @@
                                             "com.googlecode.iterm2",
                                             "com.apple.Terminal",
                                             "com.microsoft.VSCode"
-
                                         ],
                                         "type": "frontmost_application_if"
                                     }
                                 ],
                                 "description": "For iterm2, iterm, and VSCode change tab to esc",
-                                "from": {
-                                    "key_code": "caps_lock"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape"
-                                    }
-                                ],
+                                "from": { "key_code": "caps_lock" },
+                                "to": [{ "key_code": "escape" }],
                                 "type": "basic"
                             }
                         ]
@@ -101,15 +75,10 @@
                 ]
             },
             "name": "Default profile",
-            "parameters": {
-                "delay_milliseconds_before_open_device": 1000
-            },
             "selected": true,
-            "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
-                "indicate_sticky_modifier_keys_state": true,
-                "mouse_key_xy_scale": 100
+                "keyboard_type_v2": "ansi"
             }
         }
     ]
