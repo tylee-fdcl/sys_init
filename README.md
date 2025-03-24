@@ -12,6 +12,8 @@
 
 * Install [MacTex](https://www.tug.org/mactex/)
 
+* Install [Skim](https://sourceforge.net/projects/skim-app/)
+
   
 
 
