@@ -2,7 +2,7 @@
 
 
 
-* Install hombrew, git, tmux, neovim, vimplug, and python by 
+* Install hombrew, git, git-credential-manager, tmux, neovim, vimplug, pynvim, and python by 
 
   ``source setup.sh``
 

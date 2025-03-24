@@ -13,6 +13,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/tylee/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install python3 neovim tmux
+brew install --cask git-credential-manager
 
 pip3 install --user --break-system-packages pynvim
 
