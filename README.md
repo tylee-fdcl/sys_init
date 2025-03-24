@@ -1,21 +1,17 @@
 # sys_init
 
-https://docs.brew.sh/Installation
 
-brew install neovim
 
-brew install tmux
+* Install hombrew, git, tmux, neovim, vimplug, and python by 
 
-~/.config/nvim/init.vim
+  ``source setup.sh``
 
-~/.tmux.conf
-$ tmux source-file ~/.tmux.conf
+* At nvim, run `:PlugInstall`,  `:UpdateRemotePlugins`
 
-~/.config/karabiner/karabiner.json
+* Install [Karabiner](https://karabiner-elements.pqrs.org)
 
-https://github.com/junegunn/vim-plug
+* Install [MacTex](https://www.tug.org/mactex/)
 
-https://github.com/Shougo/deoplete.nvim
-pip3 install --user pynvim
+  
 
 
