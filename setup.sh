@@ -2,6 +2,9 @@ echo "Installing Mac command like tools"
 
 xcode-select --install
 
+git config --global user.name "tylee"
+git config --global user.email tylee.fdcl@gmail.com
+
 echo "Installing Homebrew"
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
