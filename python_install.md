@@ -25,6 +25,10 @@
   pyenv virtualenvs
   pyenv activate <env_name>
   ```
+  **Recommended**: To activate a certain venv at a specific folder automatically, go to the folder and run
+  ```
+  pyenv local <env_name>
+  ```
 
 * Install packages
 
