@@ -12,7 +12,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "Installing python nvim and tmux"
 
-brew install pyenv neovim tmux starship
+brew install pyenv neovim tmux starship pyenv-virtualenv ruby
 
 # pip3 install --user --break-system-packages pynvim
 # sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
